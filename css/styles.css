@@ -1,0 +1,365 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+}
+/* ESTILOS INDEX */
+h1 {
+    font-weight: bolder;
+}
+
+.navbar {
+    background-color: orange;
+    height: 80px;
+}
+
+.navbar li {
+    font-weight: bold;
+}
+
+.nav-hover-grow:hover {
+    font-size: 110%;
+    transition: font-size 0.3s ease-in-out; 
+}
+
+.navbar-toggler {
+    color: white; 
+}
+
+.ul-bg-color {
+    background-color: orange;
+}
+
+.carousel-item h5 p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+ .fondo-etiqueta {
+    background-color: rgba(255, 165, 0, 0.8)
+ } 
+
+ footer p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ .logos-redes-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+ @media (max-width: 450px) {
+    .logos-redes-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+     }
+ }
+
+ .logo-instagram {
+    width: 100%;
+ }
+
+ .logo-whatsapp {
+    width: 100%;
+ }
+
+ .logo-instagram-link {
+    width: 10%;
+    margin-right: 20px;
+ }
+
+ .logo-whatsapp-link {
+    width: 10%;
+ }
+ /* ESTILOS INDEX */
+
+ /* ESTILOS PRODUCTOS */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "h1-productos h1-productos h1-productos" "h2-cocina h2-cocina h2-cocina"  "cocina cocina cocina" "h2-comedor h2-comedor h2-comedor" "comedor comedor comedor" "h2-dormitorio h2-dormitorio h2-dormitorio" "dormitorio dormitorio dormitorio";
+ 
+}
+
+@media (min-width: 820px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:  "h1-productos h1-productos h1-productos" "h2-cocina h2-cocina h2-cocina"  "cocina cocina cocina" "h2-comedor h2-comedor h2-comedor" "comedor comedor comedor" "h2-dormitorio h2-dormitorio h2-dormitorio" "dormitorio dormitorio dormitorio";
+       
+    }
+}
+
+.h1-productos {
+    grid-area: h1-productos;
+    margin: auto;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+@media (min-width: 760px) {
+    .h1-productos {
+        grid-area: h1-productos;
+        margin: auto;
+        margin-top: 3%;
+        font-weight: bold;
+    }
+}
+
+.container-cocina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: cocina;
+}
+
+@media (min-width: 760px) {
+    .container-cocina {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        grid-area: cocina;
+        justify-content: space-around;
+    }
+}
+
+.h2-cocina {
+    align-self: self-start;
+    margin-left: 10%;
+    margin-top: 5%;
+    grid-area: h2-cocina;
+}
+
+@media (min-width: 760px) {
+    .h2-cocina {
+        align-self: self-start;
+        margin-left: 4%;
+        margin-top: 1%;
+        grid-area: h2-cocina;
+    }
+}
+
+.container-cocina__carta-cocina {
+    width: 80%;
+}
+
+@media (min-width: 760px){
+    .container-cocina__carta-cocina {
+        width: 25%;
+    }
+}
+
+.container-cocina__carta-cocina {
+    border: 1px solid rgb(62, 60, 60);
+    margin: 30px 0;
+    border-radius: 2px;
+}
+
+.container-cocina__img {
+    width: 100%;
+}
+
+.container-cocina__p {
+   color: white;
+}
+
+.container-cocina__info-tarjeta {
+    background-color: rgb(62, 60, 60);
+    padding: 3%;
+}
+
+.container-cocina__button{
+    padding: 2%;
+    color: white;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.container-cocina__button:hover {
+    background-color: #000000;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-cocina__button:active {
+    background-color: #000000;
+    box-shadow: none;
+    transform: translateX(1px);
+}
+
+.container-comedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: comedor;
+}
+
+@media (min-width: 760px) {
+    .container-comedor {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        grid-area: comedor;
+        justify-content: space-around;
+    }
+}
+
+.h2-comedor {
+    align-self: self-start;
+    margin-left: 10%;
+    margin-top: 5%;
+    grid-area: h2-comedor;
+}
+
+@media (min-width: 760px) {
+    .h2-comedor {
+        align-self: self-start;
+        margin-left: 4%;
+        grid-area: h2-comedor;
+    }
+}
+
+.container-comedor__carta-comedor {
+    width: 80%;
+}
+
+@media (min-width: 760px){
+    .container-comedor__carta-comedor {
+        width: 25%;
+    }
+}
+
+.container-comedor__carta-comedor {
+    border: 1px solid rgb(62, 60, 60);
+    margin: 30px 0;
+    border-radius: 2px;
+}
+
+.container-comedor__img {
+    width: 100%;
+}
+
+.container-comedor__p {
+   color: white;
+}
+
+.container-comedor__info-tarjeta {
+    background-color: rgb(62, 60, 60);
+    padding: 3%;
+}
+
+.container-comedor__button {
+    padding: 2%;
+    color: white;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.container-comedor__button:hover {
+    background-color: #000000;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-comedor__button:active {
+    background-color: #000000;
+    box-shadow: none;
+    transform: translateX(1px);
+}
+
+.container-dormitorio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: dormitorio;
+}
+
+@media (min-width: 760px) {
+    .container-dormitorio {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        grid-area: dormitorio;
+        justify-content: space-around;
+    }
+}
+
+.h2-dormitorio {
+    align-self: self-start;
+    margin-left: 10%;
+    margin-top: 5%;
+    grid-area: h2-dormitorio;
+}
+
+@media (min-width: 760px) {
+    .h2-dormitorio {
+        align-self: self-start;
+        margin-left: 4%;
+        grid-area: h2-dormitorio;
+    }
+}
+
+.container-dormitorio__carta-dormitorio {
+    width: 80%;
+}
+
+@media (min-width: 760px){
+    .container-dormitorio__carta-dormitorio {
+        width: 25%;
+    }
+}
+
+.container-dormitorio__carta-dormitorio {
+    border: 1px solid rgb(62, 60, 60);
+    margin: 30px 0;
+    border-radius: 2px;
+}
+
+.container-dormitorio__img {
+    width: 100%;
+}
+
+.container-dormitorio__p {
+   color: white;
+}
+
+.container-dormitorio__info-tarjeta {
+    background-color: rgb(62, 60, 60);
+    padding: 3%;
+}
+
+.container-dormitorio__button{
+    padding: 2%;
+    color: white;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.container-dormitorio__button:hover {
+    background-color: #000000;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-dormitorio__button:active {
+    background-color: #000000;
+    box-shadow: none;
+    transform: translateX(1px);
+}
+ /* ESTILOS PRODUCTOS */
